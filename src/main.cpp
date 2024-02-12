@@ -2,7 +2,10 @@
 #include "main.h"
 #include "taskbar.h"
 
+// Ensure proper main function definition for macOS
+#ifndef __WXOSX__
 #define main main
+#endif
 
 bool TrayApp::OnInit()
 {
@@ -16,10 +19,10 @@ bool TrayApp::OnInit()
     int posX = screenRect.GetWidth() - frameWidth - margin;
     int posY = screenRect.GetHeight() - frameHeight - margin;
 
-	MainFrame* frame = new MainFrame("Tray App", wxPoint(posX, posY), wxSize(frameWidth, frameHeight));
-	TaskBarIcon* taskBarIcon = new TaskBarIcon(frame);
+    MainFrame* frame = new MainFrame("Tray App", wxPoint(posX, posY), wxSize(frameWidth, frameHeight));
+    TaskBarIcon* taskBarIcon = new TaskBarIcon(frame);
 
-	return true;
+    return true;
 }
 
 // This is the entry point for the application
