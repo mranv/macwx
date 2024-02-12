@@ -1,0 +1,3 @@
+/Users/mranv/development/mac-cpp-wxwedgit/cmake-build-debug/CMakeFiles/YourExecutableName.dir
+/Users/mranv/development/mac-cpp-wxwedgit/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mranv/development/mac-cpp-wxwedgit/cmake-build-debug/CMakeFiles/rebuild_cache.dir
